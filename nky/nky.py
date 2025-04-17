@@ -16,7 +16,7 @@ class nky(commands.Cog):
             return
         
         # List of greetings to look for
-        greetings = ["kms", "kill myself"]
+        greetings = ["kms", "kill myself", "me matar", "me mata"]
 
         # Check if any greeting is in the message
         for greeting in greetings:
