@@ -21,11 +21,12 @@ class nky(commands.Cog):
 
         wordToSearch = "never kill yourself"
         user = "Showori_"
+        query = f'from:{user} "{wordToSearch}"'
 
         # Check if any greeting is in the message
         for word in words:
             if re.search(rf'\b{word}\b', message.content.lower()):
-                tweet = none
+                tweet = None
                 for t in sntwitter.TwitterSearchScraper(query).get_items():
                     tweet = t
                     break
